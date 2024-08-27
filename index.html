@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./Images/Icons/encriptado.png" type="image/x-icon">
+</head>
+<body>
+    
+<div class="container">
+        <h1 class="entorno__titulo">ENCRIPTADOR DE TEXTO</h1>
+        <img  src="./Images/Icons/AY.png" alt="logotipo de AY design" class="entorno__logo">
+
+    <div class="encriptar">
+        <textarea 
+        name="texto" 
+        class="texto" 
+        id="texto" 
+        ols="30" 
+        rows="10" 
+        placeholder="INGRESA TU TEXTO AQUI">
+        </textarea>
+        <div class="condicion">
+            <p>Solo usa letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttons">
+            <button class="btn__encriptar" type="button" onclick="encriptar()">
+                ENCRIPTAR
+            </button>
+            <input type="button"
+            class="btn__desencriptar"
+            value="DESENCRIPTAR"
+            onclick="desencriptar()"
+            />
+        </div>
+    </div>
+    <div class="encriptado">
+        <img src="./Images/Icons/x.png" alt="una equis" id="icon">
+        <div class="msj__encriptado" id="msj__encriptado">
+        <h2 id="título__encriptado">NO SE ENCUENTRA MENSAJE</h2>
+        <P id="p__encriptado"> Aquí aparecerá tu mensaje 
+            encriptado o desencriptado</P>
+            <!-- <textarea 
+            name="mensaje" 
+            class="mensaje" 
+            id="texto" 
+            ols="30" 
+            rows="10" >
+        </textarea> -->
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <p>
+        Desarrollado por Antonio Yllescas, 2024
+    </p>
+</footer>
+<script src="index.js"></script>
+</html>
